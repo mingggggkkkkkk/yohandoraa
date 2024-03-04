@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+    <style>
+        body { background: beige; }
+        div { width: 1000px; margin: 0 auto;
+                background: #fff;}
+
+        /* 미디어쿼리 */
+        @media screen and (max-width: 1000px ) and ( min-width: 601px ) {
+            body { background: rgb(255, 214, 163); }
+            div { width: 600px; }
+        }
+        @media screen and ( max-width: 600px ) {
+            div { width: 100%;text-align: center; }
+            img { width: 80%; }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>반응형 웹사이트</h1>
+        <p>각 장치 기기에 맞도록 레이아웃이나 폰트크기를 맞추어서 코딩</p>
+        <img src="./images/station.jpg" alt="기차역">
+    </div>
+</body>
+</html>
